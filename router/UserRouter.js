@@ -156,7 +156,6 @@ router.post('/updatestudent',redirectLogin,(req,res)=>{
 //function for update student
 async function updateStud(req,res) {
     var id=req.body._id;
-    console.log(id);
 
     const stud=await Student.findById(id);
 

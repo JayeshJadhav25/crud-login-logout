@@ -25,7 +25,7 @@ app.engine('handlebars',exphbs({
 app.set('view engine','handlebars');
 
 //Checking database is connected or not
-mongoose.connect('mongodb://localhost/witsy',{ useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://crud:4ieR9bVLjIb7ZR9n@cluster0-wrljq.mongodb.net/witsy?retryWrites=true&w=majority',{ useNewUrlParser: true,useUnifiedTopology: true })
     .then(()=>console.log("Database is connected"))
     .catch(err=>console.log("Could not connected to database"));
 
